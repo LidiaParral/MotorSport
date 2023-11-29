@@ -7,7 +7,6 @@
 }
 
 body{
-    text-align: center;
     font-family: 'Times New Roman';
 }
 
@@ -15,16 +14,19 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 63px;
+    height: 80px;
     background: black;
     position: fixed;
     width: 100%;
     z-index: 100;
 }
 
+
 .navbar{
     display: flex;
     margin-right: 10px;  
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .logo {
@@ -45,7 +47,7 @@ body{
     padding: 20px 20px;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .navbar a:hover {
@@ -55,6 +57,28 @@ body{
 
 .navbar a:focus{
     background: #E9A445;
+}
+
+.btn-login a {
+    padding:  7px 7px;
+    font-size: 16px;
+    margin-right: 30px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.btn-login .btn:focus {
+    background: #E9A445;
+    color: white;
+}
+
+
+.btn-login .btn {
+    display: flex;
+}
+
+.logo {
+    size-adjust: initial;
 }
 
 .header{
@@ -67,15 +91,19 @@ body{
 
 .header p {
     color: white;
+    padding-bottom: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-.header .inicio {
+.header .inicio{
     color: white;   
     margin-bottom: 40px;
     font-size: 60px;
     font-weight: 600;
     text-transform: uppercase;
 }
+
 
 .title{
     margin-bottom: 40px;
@@ -84,31 +112,9 @@ body{
     text-transform: uppercase;
 }
 
-.subtitle{
-    margin-bottom: 40px;
-    font-size: 45px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: white;
-}
-
-p{
-    margin-bottom: 40px;
-    font-size: 18px;
-    color: white;
-    padding: 0 100px;
-}
-
-.horario{
-    margin-bottom: 40px;
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
 .btn {
-    display: inline-block;
     margin-top: 15px;
+    margin-bottom: 15px;
     padding: 10px 40px;
     border: 2px solid orange;
     color: white;
@@ -116,11 +122,6 @@ p{
     background: orange;
 }
 
-.btn:hover {
-    background: none;
-    color: orange;
-
-}
 
 .btn-home {
     display: flex;
@@ -130,15 +131,11 @@ p{
     margin:  0 10px;
 }
 
-.btn:focus {
+.btn-home .btn:focus {
     background: #E9A445;
     color: white;
 }
 
-.btn:hover {
-    background: #E9A445;
-    color: white;
-}
 
 .content {
     height: 50vh;
@@ -149,16 +146,21 @@ p{
 }
 
 .shop {
-    padding: 50px;
-    background: #E9A445;
+    padding: 80px;
+    background: #64C5B5;
 }
 
 .shop .subtitle {
     color: black;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
 .shop p {
     color: black;
+    justify-content: left;
 }
 
 .box-container {
@@ -191,22 +193,33 @@ p{
     color:  white;
 }
 
-.services {   
-    background: url(image/car2.png) no-repeat center;
+.services {
+    padding: 5px;
+    background: url(image/car.png) no-repeat center;
     background-size: cover;
+}
+
+.services .subtitle {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
 }
 
 .services .contain p {
     color: black;
     font-weight: 400;
     font-size: 18px;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .contact {  
     background: black;
-    padding-top: 50px;
-    padding-bottom: 0;
-
+    padding: 20px;
 }
 
 .contact i {
@@ -216,10 +229,23 @@ p{
 .contact .horario {
     color: white;
     font-size: 18px;
-    padding-top: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 10px;
 }
 
-.contact p .horas {
+.contact p {
+    padding-bottom: 10px;
+    margin: 10px;
+    font-size: 16px;
     color: white;
-    margin: 50px;
 }
+
+.contact .subtitle {
+    padding-bottom: 5px;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+

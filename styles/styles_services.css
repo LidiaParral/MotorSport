@@ -1,0 +1,57 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    font-family: 'Times New Roman'; 
+}
+
+.head{
+    display: flex;     
+    align-items: center;
+    height: 70px;
+    background: black;
+    position: fixed;
+    width: 100%;
+    color: white;   
+}
+
+.navbar{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.head .title {  
+    margin-left: 600px;
+    padding-top: 10px;
+    text-align: center;  
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-inicio a {
+    font-size: 16px;
+    text-align: center;
+}
+
+.head .navbar .btn-inicio .btn {
+    margin-left: 600px;
+    padding: 8px 8px;
+    border: 2px solid orange;
+    color: white;
+    text-decoration: none;
+    background: orange;
+    text-transform: uppercase;
+    font-weight: 450;
+}
+
+.head .navbar .btn-inicio .btn {
+    display: flex;
+}
